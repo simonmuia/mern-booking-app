@@ -1,11 +1,17 @@
-# Getting Started with Create React App
+# MERN Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Background Information
+* This is a full MERN hotel booking/reservation app that allows users view available hotel rooms, create user account and book available rooms.
 
-## Available Scripts
+## Technologies used.
 
-In the project directory, you can run:
+* ReactJs[https://reactjs.org/]
+* TailwindCSS[https://tailwindcss.com/]
+* HeadlessUI[https://headlessui.com/]
 
+
+## Creator
+ &copy;2023 Simon Muia&trade;
 ### `npm start`
 
 Runs the app in the development mode.\
