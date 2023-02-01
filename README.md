@@ -12,6 +12,13 @@
 
 ## Creator
  &copy;2023 Simon Muia&trade;
+
+
+## Project Installation
+
+### `npm install`
+* This command installs required pre-requisites in your downloaded project
+
 ### `npm start`
 
 Runs the app in the development mode.\
