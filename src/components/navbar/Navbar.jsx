@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="flex flex-1  flex-row justify-between items-center">
         {/* Brand span */}
         <div className="flex-1">
-          <img className="h-[50px] cursor-pointer bg-white rounded-lg" src={logo} alt="logo" />
+          <img className="w-[50px]  cursor-pointer bg-white rounded-lg md:w-[50px] sm:w-[50px]" src={logo} alt="logo" />
         </div>
 
         {/* MenuItems */}
