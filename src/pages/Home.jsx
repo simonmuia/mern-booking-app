@@ -1,5 +1,5 @@
 import React from "react"
-import Feed from "../components/feed/Feed"
+import Featured from "../components/featured/Featured"
 import Header from "../components/header/Header"
 import Navbar from "../components/navbar/Navbar"
 
@@ -9,7 +9,8 @@ const Home = () => {
     <div>
     <Navbar/>
     <Header/>
-    <Feed/>
+    <Featured/>
+    <Featured/>
     </div>
   )
 }
