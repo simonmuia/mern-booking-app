@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+
+
 const Navbar = () => {
   return (
     // create nav wrapper
@@ -6,13 +9,14 @@ const Navbar = () => {
       {/* Navcontainer */}
       <div className="flex flex-1 flex-row justify-between items-center ">
         {/* Brand span */}
-        <div className="flex-1">
+        <Link to='/' className="flex-1">
           <img
+            
             className="w-[50px]  cursor-pointer bg-white rounded-lg md:w-[50px]"
             src={logo}
             alt="logo"
           />
-        </div>
+        </Link>
 
         {/* MenuItems */}
         <div className="flex flex-2 lg:flex-row gap-10 justify-end items-center  ">

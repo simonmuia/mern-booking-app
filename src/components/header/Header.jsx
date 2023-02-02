@@ -54,7 +54,7 @@ const Header = ({ type }) => {
             </div>
 
             {/* Filter Inputs collections */}
-            <FilterInputs /></>}
+            <FilterInputs/></>}
           </div>
     </div>
   );

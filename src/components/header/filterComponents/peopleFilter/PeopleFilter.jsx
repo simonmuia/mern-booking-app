@@ -28,8 +28,7 @@ const PeopleFilter = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5 ">
-      {/* place search */}
+    <div className="flex  gap-5 ">
       <div className="flex flex-row items-center gap-4">
         <FontAwesomeIcon icon={faPerson} />
         <span onClick={()=>setOpenOptions(!openOptions)} className="md:cursor-pointer flex w-[100%] gap-10">

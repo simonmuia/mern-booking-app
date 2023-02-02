@@ -13,7 +13,24 @@ const FilterInputs = () => {
 
   return (
     // Input Lists
-    <div className="p-5 bottom-[-35px] sm:self-center gap-5 flex justify-between lg:flex-row rounded-md lg:absolute  w-[90%] text-neutral-400 sm:   sm:flex-col bg-white border-2 border-[#febb02]">
+    <div className="
+    absolute 
+     p-5 
+     lg:bottom-[-50px]
+     md:bottom-[255px] 
+     sm:self-center 
+     mt-10
+     gap-5 
+     flex 
+     text-center
+     justify-between 
+     lg:flex-row rounded-md   
+     w-[90%] text-neutral-400 
+     sm:flex-col
+
+      bg-white border-2 
+      border-[#febb02]
+     ">
       <PlaceComponent />
 
       <DateFilter />
