@@ -3,13 +3,9 @@ import './App.css';
 import React from "react";
 import Home from './pages/Home'
 import List from './list/List'
-import { createRoot } from "react-dom/client";
 import {
-  createBrowserRouter,
-  RouterProvider,
   Routes,
   Route,
-  Link,
   BrowserRouter,
 } from "react-router-dom";
 import Hotel from './hotel/Hotel';

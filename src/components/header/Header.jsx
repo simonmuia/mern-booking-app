@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Categories from "../../utils/HeaderItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
-import FilterInputs from "./searchbar/FilterInputs";
+import FilterInputs from "./filterComponents/FilterInputs";
 
 const Header = () => {
   //add useState hook to label selected link
