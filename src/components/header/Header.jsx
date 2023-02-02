@@ -11,7 +11,7 @@ const Header = () => {
     // Define  header Wrapper
     <div className="flex  justify-between pb-10 px-[3rem] md:px-[3rem] sm:px-3 pt-10 bg-[#003580]  ">
       {/* Define Header Container */}
-      <div className="text-white w-max max-w-[1024px] mt-[20px] mb-[100px]">
+      <div className="text-white   mt-[20px] mb-[100px]">
         {/* Header List */}
         <div className="flex w-100 flex-grow gap-[10rem]  lg:flex-row md:flex-row  sm:flex-col sm:gap-1">
           {/*Header list item  */}
