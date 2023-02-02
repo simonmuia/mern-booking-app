@@ -24,7 +24,7 @@ const DateFilter = () => {
      {/* Date inputs */}
      <div className="flex flex-row items-center gap-4">
        <FontAwesomeIcon icon={faCalendarDays} />
-       <span onClick={() => setOpenDate(!openDate)}>
+       <span className='cursor-pointer' onClick={() => setOpenDate(!openDate)}>
          {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
            date[0].endDate,
            "MM/dd/yyyy"

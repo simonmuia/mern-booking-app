@@ -9,9 +9,6 @@ import PlaceComponent from "./placeFilter/PlaceComponent";
 import PeopleFilter from './peopleFilter/PeopleFilter'
 ;
 const FilterInputs = () => {
-  //   Open options
-  // let [openOptions, setOpenOptions] = useState(false);
-
 
 
   return (
