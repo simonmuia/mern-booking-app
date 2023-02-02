@@ -2,7 +2,7 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     // create nav wrapper
-    <div className="flex l bg-[#003580] h-[6rem]  border-gray-200 px-[3rem] md:px-[3rem] sm:px-3 py-2.5  dark:bg-gray-900">
+    <div className="flex l bg-company-blue h-[6rem]  border-gray-200 px-[3rem] md:px-[3rem] sm:px-3 py-2.5  dark:bg-gray-900">
       {/* Navcontainer */}
       <div className="flex flex-1 flex-row justify-between items-center ">
         {/* Brand span */}
