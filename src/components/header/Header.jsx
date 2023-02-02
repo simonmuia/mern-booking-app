@@ -9,7 +9,7 @@ const Header = () => {
   const [selectedHeaderItem, setselectedHeaderItem] = useState("");
    return (
     // Define  header Wrapper
-    <div className="flex  justify-between pb-10 px-[3rem] md:px-[3rem] sm:px-3 pt-10 bg-[#003580]  ">
+    <div className="flex lg:relative sm:pb-10 flex-col px-[3rem] md:px-[3rem] sm:px-3 pt-10 bg-[#003580]  ">
       {/* Define Header Container */}
       <div className="text-white   mt-[20px] mb-[100px]">
         {/* Header List */}
@@ -41,9 +41,10 @@ const Header = () => {
         <button className='rounded-md mt-4 p-[10px] bg-[#0071c2]
         '>SignIn / Register</button>
         </div>
-          {/* Filter Inputs collections */}
-          <FilterInputs/>
+         
       </div>
+       {/* Filter Inputs collections */}
+       <FilterInputs/>
     </div>
   );
 };
