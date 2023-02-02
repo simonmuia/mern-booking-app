@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import Categories from "../../utils/HeaderItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './header.css'
+import FilterInputs from "./searchbar/FilterInputs";
 
 const Header = () => {
   //add useState hook to label selected link
   const [selectedHeaderItem, setselectedHeaderItem] = useState("");
    return (
     // Define  header Wrapper
-    <div className="flex justify-center pb-10 px-10 pt-10 bg-[#003580]">
+    <div className="flex  justify-between pb-10 px-[3rem] md:px-[3rem] sm:px-3 pt-10 bg-[#003580]  ">
       {/* Define Header Container */}
-      <div className=" w-max max-w-[1024px] mt-[20px] mb-[100px]">
+      <div className="text-white w-max max-w-[1024px] mt-[20px] mb-[100px]">
         {/* Header List */}
-        <div className="flex gap-10">
+        <div className="flex w-100 flex-grow gap-[10rem]  lg:flex-row md:flex-row  sm:flex-col sm:gap-1">
           {/*Header list item  */}
 
           {Object.entries(Categories).map(([key, { icon, title }]) => (
@@ -23,16 +24,25 @@ const Header = () => {
              
               className={
                 title === selectedHeaderItem
-                  ? "headerlist-item rounded-[20px] text-white flex p-[10px] items-center gap-[10px] cursor-pointer"
-                  : `p-[11px] rounded-[20px] text-white flex items-center gap-[10px] cursor-pointer hover:p-[10px] hover:border-white hover:border-[1px]`
+                  ? "headerlist-item text-white  rounded-[20px] flex p-[10px] items-center gap-[10px] cursor-pointer"
+                  : `p-[11px] max-w-screen-2xl text-gray-300  transition duration-300 rounded-[20px] flex items-center gap-[10px] cursor-pointer hover:p-[10px] hover:text-white hover:border-white hover:border-[1px]`
               }
               key={key}
             >
               <FontAwesomeIcon icon={icon} />
               <span>{title}</span>
             </div>
-          ))}
+          ))}        
         </div>
+        {/* Header Description */}
+        <div className='flex flex-col gap-6 mt-10 items-start  text-white'>
+        <h1 className="text-3xl  font-bold">A lifetime of discounts? It's Genius.</h1>
+        <p>Get rewarded for your travels-unlock instant savings of 10% or more with a free MyBooking App</p>
+        <button className='rounded-md mt-4 p-[10px] bg-[#0071c2]
+        '>SignIn / Register</button>
+        </div>
+          {/* Filter Inputs collections */}
+          <FilterInputs/>
       </div>
     </div>
   );
