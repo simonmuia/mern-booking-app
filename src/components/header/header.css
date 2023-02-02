@@ -1,0 +1,7 @@
+.headerlist-item{
+    border:1px solid white;
+}
+.hoveredlist-item{
+    border:1px solid white;
+    color:red;
+}
