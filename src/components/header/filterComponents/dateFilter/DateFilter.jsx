@@ -2,9 +2,37 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import React, { useState } from 'react'
+import React, { useState,useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+
+
+//Define clickoutside function
+let useClickOutside = (handler) => {
+  /*
+  - The defined domNode detects when user clicks outsite the popup component
+  and closes the component.
+  -It keeps the component open only when user is using it.
+  */
+//  useRef is used to prevent re-rendering by useState 
+  let domNode = useRef();
+
+  useEffect(() => {
+    let mayBehandler = (event) => {
+      if (!domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", mayBehandler);
+    return () => {
+      document.removeEventListener("mousedown", mayBehandler);
+    };
+  });
+  return domNode;
+};
+
+
 
 const DateFilter = () => {
 
@@ -18,8 +46,14 @@ const DateFilter = () => {
   ]);
   const [openDate, setOpenDate] = useState(false);
 
+  // Re-Define domNode to run clickoutside function
+  let domNode = useClickOutside(() => {
+    setOpenDate(false);
+  });
+
+
   return (
-     <div className="flex ">
+     <div className="flex" ref={domNode}>
 
      {/* Date inputs */}
      <div className="flex flex-row items-center gap-4">
@@ -35,7 +69,8 @@ const DateFilter = () => {
 
      {/* Date Range picker */}
      {openDate && (
-       <DateRange
+       <DateRange 
+        
          className="lg:top-[50px] absolute bottom-[-40px]"
          editableDateInputs={true}
          onChange={(item) => setDate([item.selection])}
