@@ -95,14 +95,14 @@ const PeopleFilter = () => {
           ref={domNode}
           className="flex 
           absolute 
-          md:self-start 
           sm-[550px]:self-center 
           h-max lg:top-[50px] 
           md:bottom-[90px] 
           sm:bottom-[-7rem] 
           bg-white 
           z-[2]
-          p-10 
+          p-10
+           
           shadow-md 
           rounded-md  
           flex-col gap-2"
