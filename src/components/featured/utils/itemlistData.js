@@ -22,4 +22,25 @@ export const ItemList = [
         alt: 'reno properties'
     
     },
+    {
+        name: 'Reno',
+        description: '533 Properties',
+        url: 'https://cf.bstatic.com/xdata/images/hotel/square600/154543781.webp?k=ad89bc70ec138736b22947f52b7e0ecbac176026e13c50646147303582d94bcd&o=&s=1',
+        alt: 'reno properties'
+    
+    },
+    {
+        name: 'Reno',
+        description: '533 Properties',
+        url: 'https://cf.bstatic.com/xdata/images/hotel/square600/154543781.webp?k=ad89bc70ec138736b22947f52b7e0ecbac176026e13c50646147303582d94bcd&o=&s=1',
+        alt: 'reno properties'
+    
+    },
+    {
+        name: 'Reno',
+        description: '533 Properties',
+        url: 'https://cf.bstatic.com/xdata/images/hotel/square600/154543781.webp?k=ad89bc70ec138736b22947f52b7e0ecbac176026e13c50646147303582d94bcd&o=&s=1',
+        alt: 'reno properties'
+    
+    },
 ]

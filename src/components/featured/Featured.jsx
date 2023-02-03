@@ -9,15 +9,18 @@ const Featured = () => {
     items-center
     md:mt-[6rem]
     sm:mt-[13rem]
-    
+    relative 
+    overflow-x-scroll
+    scrollbar-hide
     '>
+      
       {/* Featured item list */}
-      <div className='flex justify-between w-max-lg gap-3'>
+      <div className='flex  flex-row space-x-5 '>
         {/* Import items from datalist */}
       {/* Item */}
       {ItemList.map((itemlist)=>(
-      <div className='relative  overflow-hidden '>
-        <img className='object-cover w-[250px] rounded-lg' src={itemlist.url} alt={itemlist.alt} />
+      <div className='relative first:ml-[88rem] last:pr-10 w-max h-max  cursor-pointer    '>
+        <img className='object-cover w-[350px] rounded-lg' height={1080} width={1920} src={itemlist.url} alt={itemlist.alt} />
         {/* Item titles */}
         <div className='absolute left-5 text-white bottom-5'>
           <h1 className='md:text-2xl font-bold sm:text-lg'>{itemlist.name}</h1>
@@ -27,6 +30,13 @@ const Featured = () => {
       </div>))}
 
       </div>
+     
+      <div className="absolute  
+      right-0 bg-gradient-to-l 
+      from-[#022a3a] 
+      h-[100%]
+       w-1/12
+       z-2" />
     </div>
   )
 }
