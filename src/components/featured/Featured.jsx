@@ -11,6 +11,7 @@ const Featured = () => {
     relative 
     overflow-x-scroll
     scrollbar-hide
+   scroll-smooth
     '>
       
       {/* Featured item list */}
