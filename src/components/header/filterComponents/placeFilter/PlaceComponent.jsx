@@ -10,7 +10,7 @@ const PlaceComponent = () => {
     <FontAwesomeIcon icon={faBed} />
 
     <input
-      className="border-transparent focus:border-transparent focus:ring-0"
+      className="border-transparent w-[200px] focus:border-transparent focus:ring-0"
       type="text"
       placeholder="Where are you going?"
       autoComplete="off"

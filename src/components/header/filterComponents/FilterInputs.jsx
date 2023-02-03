@@ -19,7 +19,7 @@ const FilterInputs = () => {
      
      md:top-[26rem]
      sm:bottom-[-100%]
-     bsm:bottom-[-7rem] 
+     bsm:bottom-[-14rem] 
      gap-5 
      flex 
      text-center

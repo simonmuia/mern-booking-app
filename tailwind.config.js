@@ -9,7 +9,7 @@ module.exports = {
     extend:{
       screens:{
         'sm':'250px',
-        'bsm': '375px'
+        'bsm': '360px'
       },
       colors:{
         'company-blue': '#003580'
