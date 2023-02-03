@@ -63,7 +63,7 @@ const PeopleFilter = () => {
         <FontAwesomeIcon icon={faPerson} />
         <span
           onClick={() => setOpenOptions(!openOptions)}
-          className="md:cursor-pointer flex w-[100%] gap-10"
+          className="flex-1 md:cursor-pointer md:flex md:flex-row bsm:flex flex w-[100%] gap-10 sm:grid sm:gap-1"
         >
           <div className="w-[4rem]">
             {`${
@@ -93,7 +93,19 @@ const PeopleFilter = () => {
       {openOptions && (
         <div
           ref={domNode}
-          className="flex absolute md:self-start sm:self-center h-max lg:top-[50px] md:bottom-[90px] sm:bottom-[-22rem] bg-white p-10 shadow-md rounded-md  flex-col gap-2"
+          className="flex 
+          absolute 
+          md:self-start 
+          sm-[550px]:self-center 
+          h-max lg:top-[50px] 
+          md:bottom-[90px] 
+          sm:bottom-[-7rem] 
+          bg-white 
+          z-[2]
+          p-10 
+          shadow-md 
+          rounded-md  
+          flex-col gap-2"
         >
           {/* Adult Count */}
           <div className="flex  gap-3 justify-between">

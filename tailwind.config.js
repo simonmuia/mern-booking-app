@@ -8,7 +8,8 @@ module.exports = {
    
     extend:{
       screens:{
-        'sm':'250px'
+        'sm':'250px',
+        'bsm': '375px'
       },
       colors:{
         'company-blue': '#003580'

@@ -5,7 +5,7 @@ import { faBed } from '@fortawesome/free-solid-svg-icons'
 const PlaceComponent = () => {
   return (
     // Define Wrapper
-    <div className="flex flex-row items-center gap-4">
+    <div className="flex  flex-row items-center gap-4">
 
     <FontAwesomeIcon icon={faBed} />
 

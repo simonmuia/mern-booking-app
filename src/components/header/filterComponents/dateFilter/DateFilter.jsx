@@ -53,7 +53,7 @@ const DateFilter = () => {
 
 
   return (
-     <div className="flex" ref={domNode}>
+     <div className="flex  " ref={domNode}>
 
      {/* Date inputs */}
      <div className="flex flex-row items-center gap-4">
@@ -70,8 +70,7 @@ const DateFilter = () => {
      {/* Date Range picker */}
      {openDate && (
        <DateRange 
-        
-         className="lg:top-[50px] absolute bottom-[-40px]"
+         className="lg:top-[50px] w-[30%] absolute md:bottom-[-40px] sm:bottom-[-12rem] z-[2]"
          editableDateInputs={true}
          onChange={(item) => setDate([item.selection])}
          moveRangeOnFirstSelection={false}
