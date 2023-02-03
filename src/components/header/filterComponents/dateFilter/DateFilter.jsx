@@ -53,10 +53,10 @@ const DateFilter = () => {
 
 
   return (
-     <div className="flex  " ref={domNode}>
+     <div className="flex justify-center" ref={domNode}>
 
      {/* Date inputs */}
-     <div className="flex flex-row items-center gap-4">
+     <div className="flex flex-row  items-center gap-4">
        <FontAwesomeIcon icon={faCalendarDays} />
        <span className='cursor-pointer' onClick={() => setOpenDate(!openDate)}>
          {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
@@ -76,6 +76,8 @@ const DateFilter = () => {
          md:bottom-[-40px] 
          sm:bottom-[-12rem] 
          w-max
+         p-3
+         
          z-[2]"
          editableDateInputs={true}
          onChange={(item) => setDate([item.selection])}

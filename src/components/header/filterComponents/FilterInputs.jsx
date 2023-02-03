@@ -31,7 +31,7 @@ const FilterInputs = () => {
      h-max
      md:flex-row
      md:justify-between
-
+    
       bg-white border-2 
       border-[#febb02]
      ">

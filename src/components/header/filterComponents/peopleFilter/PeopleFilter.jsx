@@ -58,7 +58,7 @@ const PeopleFilter = () => {
   };
 
   return (
-    <div className="flex  gap-5 ">
+    <div className="flex  gap-5 justify-center ">
       <div className="flex flex-row items-center gap-4">
         <FontAwesomeIcon icon={faPerson} />
         <span
@@ -95,13 +95,13 @@ const PeopleFilter = () => {
           ref={domNode}
           className="flex 
           absolute 
-          sm-[550px]:self-center 
+           
           h-max lg:top-[50px] 
           md:bottom-[90px] 
           sm:bottom-[-7rem] 
           bg-white 
           z-[2]
-          p-10
+          p-8
            
           shadow-md 
           rounded-md  
