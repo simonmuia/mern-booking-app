@@ -7,8 +7,7 @@ const Featured = () => {
     flex
     flex-col
     items-center
-    md:mt-[6rem]
-    sm:mt-[13rem]
+    mt-10
     relative 
     overflow-x-scroll
     scrollbar-hide
@@ -31,12 +30,12 @@ const Featured = () => {
 
       </div>
      
-      <div className="absolute  
+      {/* <div className="absolute  
       right-0 bg-gradient-to-l 
       from-[#022a3a] 
       h-[100%]
        w-1/12
-       z-2" />
+       z-2" /> */}
     </div>
   )
 }
