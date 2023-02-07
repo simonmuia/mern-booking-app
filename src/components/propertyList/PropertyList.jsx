@@ -13,6 +13,7 @@ const propertyList = () => {
    scroll-smooth
    pb-10
    '>
+    
        <PropertyListItem/>
         
     </div>

@@ -8,10 +8,10 @@ const Featured = () => {
     flex-col
     items-center
     mt-10
-    relative 
     overflow-x-scroll
     scrollbar-hide
    scroll-smooth
+   pb-10
     '>
       
       {/* Featured item list */}
@@ -19,8 +19,8 @@ const Featured = () => {
         {/* Import items from datalist */}
       {/* Item */}
       {ItemList.map((itemlist)=>(
-      <div className='relative first:ml-[88rem] last:pr-10 w-max h-max  cursor-pointer    '>
-        <img className='object-cover w-[350px] rounded-lg' height={1080} width={1920} src={itemlist.url} alt={itemlist.alt} />
+      <div className='relative  last:pr-10 w-max h-max  cursor-pointer    '>
+        <img className='object-cover md:w-[250px] sm:w-[170px]  rounded-lg' height={1080} width={1920} src={itemlist.url} alt={itemlist.alt} />
         {/* Item titles */}
         <div className='absolute left-5 text-white bottom-5'>
           <h1 className='md:text-2xl font-bold sm:text-lg'>{itemlist.name}</h1>

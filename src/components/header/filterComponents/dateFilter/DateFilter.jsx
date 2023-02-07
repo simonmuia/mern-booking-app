@@ -53,7 +53,7 @@ const DateFilter = () => {
 
 
   return (
-     <div className="flex justify-center" ref={domNode}>
+     <div className="flex justify-center items-center" ref={domNode}>
 
      {/* Date inputs */}
      <div className="flex flex-row  items-center gap-4">
@@ -74,7 +74,7 @@ const DateFilter = () => {
          lg:top-[50px] 
          absolute 
          md:bottom-[-40px] 
-         sm:bottom-[-12rem] 
+         sm:bottom-[-18rem] 
          w-max
          p-3
          

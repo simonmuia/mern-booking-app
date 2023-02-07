@@ -58,7 +58,7 @@ const PeopleFilter = () => {
   };
 
   return (
-    <div className="flex  gap-5 justify-center ">
+    <div className="flex  gap-5 justify-center self-center ">
       <div className="flex flex-row items-center gap-4">
         <FontAwesomeIcon icon={faPerson} />
         <span

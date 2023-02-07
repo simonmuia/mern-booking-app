@@ -9,9 +9,9 @@ const Header = ({ type }) => {
   const [selectedHeaderItem, setselectedHeaderItem] = useState("");
   return (
     // Define  header Wrapper
-    <div className="flex lg:relative sm:pb-10 flex-col px-[3rem] md:px-[3rem] sm:px-3 pt-10 bg-company-blue  ">
+    <div className="relative items-center flex flex-col gap-10 bg-company-blue px-5  ">
       
-          <div className={type === "list" ? "text-white mt-[20px]" : "text-white   mt-[20px] mb-[100px]"}>
+          <div className={type === "list" ? "text-white mt-[20px] " : "flex-col text-white pt-20 mb-[100px] flex gap-10"}>
             {/* Header List */}
             <div className="flex w-100  flex-grow gap-[10rem]  lg:flex-row md:flex-row  sm:flex-col sm:gap-1">
               {/*Header list item  */}
@@ -37,7 +37,7 @@ const Header = ({ type }) => {
             {/* Header Description */}
             { type !== "list" &&
             <>
-            <div className="flex flex-col gap-6 mt-10 items-start  text-white">
+            <div className="flex flex-col gap-6 items-start  text-white">
               <h1 className="text-3xl  font-bold">
                 A lifetime of discounts? It's Genius.
               </h1>
@@ -54,7 +54,8 @@ const Header = ({ type }) => {
             </div>
 
             {/* Filter Inputs collections */}
-            <FilterInputs/></>}
+            <FilterInputs/>
+            </>}
           </div>
     </div>
   );

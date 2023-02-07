@@ -8,7 +8,7 @@ const PropertyListItem = () => {
     '>
       
       {/* Featured item list */}
-      <div className='flex flex-row pl-48 space-x-5 '>
+      <div className='flex flex-row  space-x-5 '>
         {/* Import items from datalist */}
       {/* Item */}
       {ItemCategoryList.map((itemlist)=>(

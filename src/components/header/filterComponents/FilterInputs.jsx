@@ -14,26 +14,25 @@ const FilterInputs = () => {
   return (
     // Input Lists
     <div className="
-    absolute 
+    md:absolute
+    relative
      p-5 
-     
-     md:top-[26rem]
-     sm:bottom-[-100%]
-     bsm:bottom-[-14rem] 
-     gap-5 
+     bottom-[-2.5rem]
+     md:gap-20 
      flex 
      text-center
-     justify-between 
+     items-center
+     self-center
      lg:flex-row 
-     rounded-md   
-     w-[90%] text-neutral-400 
-     sm:flex-col
+     rounded-md 
      h-max
+   text-neutral-400 
+     sm:flex-col
+     sm:items-start
      md:flex-row
      md:justify-between
-    
-      bg-white border-2 
-      border-[#febb02]
+    bg-white border-2 
+    border-[#febb02]
      ">
       <PlaceComponent />
 
