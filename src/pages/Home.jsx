@@ -2,6 +2,7 @@ import React from "react"
 import Featured from "../components/featured/Featured"
 import Header from "../components/header/Header"
 import Navbar from "../components/navbar/Navbar"
+import PropertyList from "../components/propertyList/PropertyList"
 
 const Home = () => {
   return (
@@ -16,11 +17,11 @@ const Home = () => {
     px-[3rem]
     sm:px-5
     '>
-      <h1 className='text-2xl font-bold'>Browse by Property Type</h1>
-    <Featured/>
+      <Featured/>
+
+      <h1 className='text-2xl mt-10 font-bold'>Browse by Property Type</h1>
+    <PropertyList/>
     </div>
-    
-    <Featured/>
     </div>
   )
 }
