@@ -53,7 +53,7 @@ const DateFilter = () => {
 
 
   return (
-     <div className="flex justify-center items-center" ref={domNode}>
+     <div className="" ref={domNode}>
 
      {/* Date inputs */}
      <div className="flex flex-row  items-center gap-4">
@@ -73,11 +73,10 @@ const DateFilter = () => {
          className="
          lg:top-[50px] 
          absolute 
+         left-0
          md:bottom-[-40px] 
          sm:bottom-[-18rem] 
-         w-max
          p-3
-         
          z-[2]"
          editableDateInputs={true}
          onChange={(item) => setDate([item.selection])}
